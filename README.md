@@ -10,3 +10,169 @@ console.log(username);
 console.log(loginAttempts);
 
 ```
+### CONDITIONS (if / else)
+
+```javascript
+let attempts = 1;
+
+if (attempts > 2) {
+  console.log("Account locked");
+} else {
+  console.log("Account active");
+}
+
+```
+
+```javascript
+
+let attempts = 2;
+
+if (attempts > 3) {
+  console.log("Locked");
+} else if (attempts === 3) {
+  console.log("Warning");
+} else {
+  console.log("Safe");
+}
+
+``` 
+### FUNCTIONS
+
+
+```javascript
+
+function checkAccount(attempts, isAdmin) {
+  if (attempts >= 3 && !isAdmin) {
+    console.log("Account locked");
+  } else {
+    console.log("Account active");
+  }
+}
+
+
+checkAccount(3, false);
+checkAccount(1, false);
+checkAccount(5, true);
+
+```
+
+```javascript
+
+function canLogin(attempts, isLocked) {
+  if (attempts >= 3 || isLocked) {
+    return false;
+  }
+  return true;
+}
+
+let canUserLogin = canLogin(2, false);
+console.log(canUserLogin);
+```
+
+
+### loops
+
+```javascript
+
+for (start; condition; step) {
+  // code that repeats
+}
+```
+
+```javascript
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+```
+
+
+```javascript
+
+let attempts = 0;
+
+while (attempts < 3) {
+  console.log("Trying login...");
+  attempts = attempts + 1;
+}
+
+```
+
+
+```javascript
+
+function simulateLogin(maxAttempts, isAdmin) {
+  // Admin users are never locked
+  if (isAdmin) {
+    return false;
+  }
+
+  let attempts = 0;
+
+  while (attempts < maxAttempts) {
+    attempts++;
+  }
+
+  // If attempts reached the limit, account is locked
+  return attempts >= maxAttempts;
+}
+
+simulateLogin(3, false); // true  → locked
+simulateLogin(3, true);  // false → admin, not locked
+simulateLogin(5, false); // true
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
