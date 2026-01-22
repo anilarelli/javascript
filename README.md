@@ -124,7 +124,25 @@ simulateLogin(5, false); // true
 
 ```
 
+### Array + object & property
 
+```javascript
+let users = [
+  {id:1, name:"admin", role:"admin"},
+    {id:2, name:"user", role:"user"},
+    {id:3, name:"guest", role:"guest"}
+]
+
+function printusers(users){
+  for (i=0; i < users.length; i++){
+        
+    console.log(users[i].id);
+    console.log(users[i].name);
+}
+}
+printusers(users);
+
+```
 
 
 
