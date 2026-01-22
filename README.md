@@ -147,6 +147,75 @@ printusers(users);
 
 
 
+### Return
+
+```javascript
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+let result = addNumbers(2, 3);
+console.log(result);
+
+```
+
+```javascript
+
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  }
+  return false;
+}
+let answer = isEven(4);
+console.log(answer);
+```
+
+
+
+```javascript
+
+function demo() {
+  console.log(5);
+  return 10;
+}
+
+let result = demo();
+console.log(result);
+
+```
+
+```javascript
+
+function getNumbers() {
+  let arr = [1, 2, 3];
+  return arr;
+}
+
+let nums = getNumbers();
+console.log(nums);
+
+```
+
+```javascript
+
+function getActiveUserNames(users) {
+  let result = [];
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].active === true) {
+      result.push(users[i].name);
+    }
+  }
+
+  return result;
+}
+
+let names = getActiveUserNames(users);
+console.log(names);
+
+```
 
 
 
