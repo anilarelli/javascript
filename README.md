@@ -219,9 +219,31 @@ console.log(names);
 
 
 
+#### Objects & Arrays (STRUCTURED DATA)
+
+```javascript
+
+let users = [
+  { name: "admin", active: true },
+  { name: "user1", active: false },
+  { name: "user2", active: true }
+]; 
 
 
+function getactiveusers(users){
+  let results = []
+    for (i = 0; i < users.length; i++){
+    if (users[i].active ===true){
+    results.push(users[i]);
+}
+}
+return results;
+}
 
+
+console.log(getactiveusers(users)); 
+
+```
 
 
 
