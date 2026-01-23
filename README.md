@@ -246,9 +246,47 @@ console.log(getactiveusers(users));
 ```
 
 
+### check if number present
+
+```javascript
 
 
 
+let numbers = [1,2,3,4,5]
+
+function checknumber(numbers,num){
+  for (i=0; i <numbers.length; i++){
+    if(numbers[i] === num){
+      return true;
+    }
+  }
+			return false;
+}
+
+
+console.log(checknumber(numbers,3));
+```
+
+
+### check how many times repeated
+
+```javascript
+
+let numbers = [1,5,0,5,3,4,5]
+
+function count(numbers,value){
+  let total = 0;
+	for (let i=0; i < numbers.length; i++){
+    if(numbers[i] === value){
+      total++;
+    }
+  }
+return total;
+}
+
+console.log(count(numbers,5));
+
+```
 
 
 
