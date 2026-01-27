@@ -290,13 +290,74 @@ console.log(count(numbers,5));
 
 
 
+### callback with data
+
+```javascript
+
+function greet(name) {
+  console.log("Hello " + name);
+}
+
+function processUser(callback) {
+  let userName = "Anil";
+  callback(userName);
+}
+
+processUser(greet);
+
+Hello Anil
+
+```
+
+### Function declaration
+
+```javascript
+
+greet();
+
+function greet() {
+  console.log("Hi");
+}
 
 
+Hoisted ✅
+
+Can be called before definition
+```
+
+### Function expression
 
 
+```javascript
+
+greet();
+
+const greet = function () {
+  console.log("Hi");
+};
+
+NOT hoisted ❌
+
+Variable exists, but value isn’t assigned yet
+
+Calling before assignment → error
+
+Interview one-liner you can say:
+
+“Function declarations are hoisted, function expressions are not.”
+```
+
+```javascript
+
+let f = function () {
+  return 10;
+};
+
+console.log(f);    // prints function
+console.log(f());  // prints 10
 
 
-
+```
 
 
 
