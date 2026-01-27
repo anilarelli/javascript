@@ -388,7 +388,33 @@ console.log(result);
 ```
 
 
+### Anonymous callbacks
 
+```javascript
+
+function test(fn) {
+  console.log("1");
+  fn();
+  console.log("3");
+}
+
+test(function () {
+  console.log("2");
+});
+
+```
+```javascript
+
+function run(fn) {
+  console.log("A");
+  fn();
+  console.log("B");
+}
+
+run(function () {
+  console.log("C");
+});
+```
 
 
 
