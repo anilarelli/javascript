@@ -360,7 +360,32 @@ console.log(f());  // prints 10
 ```
 
 
+### forEach
 
+```javascript
+
+let arr = [5, 15];
+
+arr.forEach(function (x) {
+  console.log(x + 5);
+});
+
+
+```
+
+### map
+
+```javascript
+
+let arr = [1, 2, 3];
+
+let result = arr.map(function (x) {
+  return x + 10;
+});
+
+console.log(result);
+
+```
 
 
 
