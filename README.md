@@ -392,6 +392,19 @@ console.log(result);
 
 ```
 
+### Filter
+
+```javascript
+
+let nums = [1, 2, 3, 4];
+
+let result = nums.filter(function (x) {
+  return x > 2;
+});
+
+console.log(result);
+
+```
 
 ### Anonymous callbacks
 
