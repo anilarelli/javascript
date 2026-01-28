@@ -358,7 +358,9 @@ console.log(f());  // prints 10
 
 
 ```
-
+forEach →    do something
+ map →       change values, keep same length
+filter() →   creates a new array with ONLY the items that pass a condition
 
 ### forEach
 
