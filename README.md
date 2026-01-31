@@ -406,6 +406,22 @@ console.log(result);
 
 ```
 
+
+### MEMORY RULE (KEEP THIS)
+
+map returns WHAT to store
+
+filter returns WHETHER to keep
+
+
+| Method  | Purpose          |
+| ------- | ---------------- |
+| forEach | do something     |
+| map     | transform values |
+| filter  | remove values    |
+
+
+
 ### Anonymous callbacks
 
 ```javascript
